@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyAbout extends StatefulWidget {
   const MyAbout({super.key});
@@ -65,16 +66,40 @@ class _MyAboutState extends State<MyAbout> {
                   Text("Software Developer",
                       style: TextStyle(color: Colors.white, fontSize: 20)),
                   SizedBox(
-                    height: 5,
+                    height: 20,
                   ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Hire Me",
-                      style: TextStyle(color: Colors.black),
+                  SizedBox(
+                    width: 120,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text("Hire Me"),
+                      style: TextButton.styleFrom(backgroundColor: Colors.white,primary: Colors.black),
                     ),
-                    style: TextButton.styleFrom(backgroundColor: Colors.white),
-                  )
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(onPressed: (){}, icon: Icon(
+                        FontAwesomeIcons.instagram,color: Colors.white,
+                      )),
+                      IconButton(onPressed: (){}, icon: Icon(
+                        FontAwesomeIcons.hashtag,color: Colors.white,
+                      )),
+                      IconButton(onPressed: (){}, icon: Icon(
+                        FontAwesomeIcons.twitter,color: Colors.white,
+                      )),
+                      IconButton(onPressed: (){}, icon: Icon(
+                        FontAwesomeIcons.linkedin,color: Colors.white,
+                      )),
+                      IconButton(onPressed: (){}, icon: Icon(
+                        FontAwesomeIcons.github,color: Colors.white,
+                      )),
+                    ],
+                  ),
+
                 ],
               ),
             )
